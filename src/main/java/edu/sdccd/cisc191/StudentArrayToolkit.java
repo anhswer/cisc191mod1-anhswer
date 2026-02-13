@@ -60,7 +60,7 @@ public class StudentArrayToolkit {
     public static Student[] topNByGpa(Student[] students, int n) {
         // TODO: validate n, sort copy, return first n in a new array
         if (students == null) {
-            throw new IllegalArgumentException("Array cannot be null");
+            throw new IllegalArgumentException("Array cannot be null.");
         }
 
         if (n < 0) {

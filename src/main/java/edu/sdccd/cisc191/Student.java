@@ -21,7 +21,7 @@ public class Student {
     public Student(String name, double gpa, int id) {
         // TODO: validate and assign fields
         if (name == null || name.isBlank()) {
-            throw new IllegalArgumentException("Student name cannot be null or blank");
+            throw new IllegalArgumentException("Student name cannot be null or blank.");
         }
         if (gpa <0.0 || gpa > 4.0) {
             throw new IllegalArgumentException("GPA must be between 0.0 and 4.0");

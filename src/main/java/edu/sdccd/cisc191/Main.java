@@ -27,7 +27,7 @@ public class Main {
         System.out.println("original order");
         Arrays.stream(students).forEach(System.out::println);
 
-        System.out.println("\nsorted by gpa (desc):");
+        System.out.println("\nsorted by GPA (desc):");
         Student[] sorted = StudentArrayToolkit.copySortedByGpaDesc(students);
         Arrays.stream(sorted).forEach(System.out::println);
 
