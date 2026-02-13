@@ -20,27 +20,36 @@ public class Student {
      */
     public Student(String name, double gpa, int id) {
         // TODO: validate and assign fields
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("Student name cannot be null or blank");
+        }
+        if (gpa <0.0 || gpa > 4.0) {
+            throw new IllegalArgumentException("GPA must be between 0.0 and 4.0");
+        }
+        if (id <=0) {
+            throw new IllegalArgumentException("Student ID must be positive");
+        }
+
+        this.name = name;
+        this.gpa = gpa;
+        this.id = id;
     }
 
     public String getName() {
-        // TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        return name;
     }
 
     public double getGpa() {
-        // TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        return gpa;
     }
 
     public int getId() {
-        // TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        return id;
     }
 
     @Override
     public String toString() {
         // TODO: return readable summary, e.g. "Student{id=..., name='...', gpa=...}"
-        throw new UnsupportedOperationException("Not implemented yet");
+        return "Student [name=" + name + ", gpa=" + gpa + ", id=" + id + "]";
     }
 }
