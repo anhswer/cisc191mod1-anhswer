@@ -1,7 +1,7 @@
 package edu.sdccd.cisc191;
 
 //import
-import java.util.ArrayList;
+//removed arrayslist because its not working for me?
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -20,7 +20,8 @@ public class Main {
                 new Student("Chris", 4.0, 1006)
         );
         // TODO demonstrate filtering
-        System.out.println("Students with GPA >= 3.0");
+        //added \n infront to match the other format
+        System.out.println("\nStudents with GPA >= 3.0");
         List<Student> filtered = StudentAnalyzer.filter(students, s -> s.getGpa() >= 3.0);
         for (Student s : filtered) {
             System.out.println(s);
@@ -40,7 +41,8 @@ public class Main {
         }
 
         // TODO print average GPA
-        System.out.printf("\nAverage GPA: " + StudentAnalyzer.averageGpa(students));
+        //changed to printf to match the other layouts
+        System.out.println("\nAverage GPA: " + StudentAnalyzer.averageGpa(students));
 
     }
 }
