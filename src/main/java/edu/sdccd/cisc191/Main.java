@@ -41,7 +41,7 @@ public class Main {
         }
 
         // TODO print average GPA
-        //changed to printf to match the other layouts
+        //changed to printf to match the other layouts (println)
         System.out.println("\nAverage GPA: " + StudentAnalyzer.averageGpa(students));
 
     }
